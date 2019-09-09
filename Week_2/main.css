@@ -1,0 +1,47 @@
+body {
+    margin: 0px;
+}
+
+nav {
+    background-color: lightcyan;
+    padding: 20px 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding-left: 0px;
+    margin: 0px;
+}
+
+nav li {
+    border-bottom: 1px solid #212529;
+    padding: 10px 0px;
+    margin: 10px;
+}
+
+nav li:first-child {
+    margin-top: 0px;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: #212529;
+    text-transform: uppercase;
+}
+
+@media(min-width: 540px){
+    nav ul li {
+        display: inline-block;
+        padding-bottom: 5px;
+        border-bottom: 0px;
+        margin: 10px 20px;
+    }
+
+    nav ul {
+        text-align: center;
+    }
+
+    nav {
+        padding: 0px 10px;
+    }
+}
