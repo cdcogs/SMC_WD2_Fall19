@@ -1,2 +1,15 @@
 @import "colors.css";
 @import url(layout.css);
+
+h3 {
+    color: greenyellow;
+    text-shadow: 2px 2px gray;
+    font-size: 24pt;
+    transform: rotate(-10deg);
+  }
+
+  p {
+      color: white;
+      line-height: 1.6;
+      font-size: 15pt;
+  }

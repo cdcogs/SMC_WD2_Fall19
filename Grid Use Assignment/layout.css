@@ -18,6 +18,16 @@ img {
     padding: 15px;
 }
 
+.content h3 {
+    margin-top: -40px
+}
+
+.content p {
+    text-align: justify;
+    padding: 10px;
+}
+
+
 /* MEDIUM SIZE SCREENS */
 @media(min-width: 540px){
     .width-md-25 {
