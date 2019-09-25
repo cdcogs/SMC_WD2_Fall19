@@ -1,6 +1,12 @@
 @import "colors.css";
 @import url(layout.css);
 
+h1 {
+    text-align: center;
+    font-size: 34pt; 
+    color:black;
+}
+
 h3 {
     color: greenyellow;
     text-shadow: 2px 2px gray;
