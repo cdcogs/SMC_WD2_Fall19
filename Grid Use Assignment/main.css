@@ -19,3 +19,8 @@ h3 {
       line-height: 1.6;
       font-size: 15pt;
   }
+
+  a {
+    color: hotpink;
+    text-align: right;
+  } 
