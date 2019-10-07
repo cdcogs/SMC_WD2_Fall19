@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+@import url(layout.css);
+@import url(colors.css);
+
+h1 {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 40px;
+    position: absolute;
+    top: 188px;
+    left: 0px;
+    color: cornsilk;
+    background-color: rgba(50, 50, 50, 0.4);
+    width: 100%;
+    box-shadow: 0px 0px 11px rgba(50, 50, 50, 0.7);
+}
