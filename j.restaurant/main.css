@@ -2,6 +2,13 @@
 @import url(layout.css);
 @import url(navbar.css);
 
+.location-upper {
+    background-image: url("homepage-banner.jpg");
+    background-position: top center;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-color: #f8f5ef;
+}
 
 /* multi-line vertical alignment */
 .content-table {
