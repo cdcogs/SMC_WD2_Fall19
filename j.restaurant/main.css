@@ -1,0 +1,63 @@
+@import "colors.css";
+@import url(layout.css);
+@import url(navbar.css);
+
+
+/* multi-line vertical alignment */
+.content-table {
+    display: table;
+    height: 120px;
+}
+
+.content-table p {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+
+/* block element with known height */
+.pos-relative {
+    position: relative;
+}
+
+/* .v-centered-block {
+    height: 100px;
+    margin-top: -50px;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+} */
+
+/* with unknown height */
+.v-centered-block {
+    height: 160px;
+    transform: translateY(-50%);
+    position: absolute;
+    top: 50%;
+    width: 100%;
+}
+
+/* block element verticaly and horizontaly centered - known height/width */
+/* .v-h-centered-block {
+    height: 140px;
+    width: 140px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    margin-top: -70px;
+    margin-left: -70px;
+} */
+
+/* for unknown height/width */
+.v-h-centered-block {
+    height: 140px;
+    width: 140px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+}
