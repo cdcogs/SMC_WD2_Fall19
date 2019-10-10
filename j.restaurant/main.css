@@ -10,6 +10,13 @@
     background-color: #f8f5ef;
 }
 
+.section.marquee-banner {
+    position: relative;
+    height: 90vw;
+    overflow: hidden;
+    z-index: 20;
+}
+
 /* multi-line vertical alignment */
 .content-table {
     display: table;
