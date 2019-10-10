@@ -23,6 +23,26 @@ img {
   z-index: 20;
 }
 
+.section.marquee-banner .text {
+    position: relative;
+    padding: 58vw 0 10vw 16vw;
+    top: auto;
+    left: auto;
+    width: auto;
+}
+
+.section.marquee-banner .text h1 {
+    font-family: 'Gilroy', sans-serif;
+    font-weight: bold;
+    line-height: 1;
+    color: #C7352D;
+    text-transform: lowercase;
+    position: relative;
+    font-size: 17vw;
+    white-space: normal;
+    animation: none;
+}
+
 /* multi-line vertical alignment */
 .content-table {
   display: table;
