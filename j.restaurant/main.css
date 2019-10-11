@@ -8,6 +8,25 @@ img {
   display: block;
 }
 
+.location-upper::before {
+    left: -9vw;
+}
+
+.location-upper::before {
+    content: ' ';
+    position: absolute;
+    background-image: url("Red-grid.png");
+    background-position: bottom right;
+    background-size: 10vw auto;
+    top: 0;
+    left: -8vw;
+    width: 18vw;
+    height: 175vw;
+    pointer-events: none;
+    user-select: none;
+    z-index: 15;
+}
+
 .location-upper {
   background-image: url("homepage-banner.jpg");
   background-position: top center;
