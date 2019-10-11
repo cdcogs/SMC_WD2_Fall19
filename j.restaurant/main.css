@@ -9,22 +9,22 @@ img {
 }
 
 .location-upper::before {
-    left: -9vw;
+  left: -9vw;
 }
 
 .location-upper::before {
-    content: ' ';
-    position: absolute;
-    background-image: url("Red-grid.png");
-    background-position: bottom right;
-    background-size: 10vw auto;
-    top: 0;
-    left: -8vw;
-    width: 18vw;
-    height: 175vw;
-    pointer-events: none;
-    user-select: none;
-    z-index: 15;
+  content: " ";
+  position: absolute;
+  background-image: url("Red-grid.png");
+  background-position: bottom right;
+  background-size: 10vw auto;
+  top: 0;
+  left: -8vw;
+  width: 18vw;
+  height: 175vw;
+  pointer-events: none;
+  user-select: none;
+  z-index: 15;
 }
 
 .location-upper {
@@ -43,23 +43,23 @@ img {
 }
 
 .section.marquee-banner .text {
-    position: relative;
-    padding: 58vw 0 10vw 16vw;
-    top: auto;
-    left: auto;
-    width: auto;
+  position: relative;
+  padding: 58vw 0 10vw 16vw;
+  top: auto;
+  left: auto;
+  width: auto;
 }
 
 .section.marquee-banner .text h1 {
-    font-family: 'Gilroy', sans-serif;
-    font-weight: bold;
-    line-height: 1;
-    color: #C7352D;
-    text-transform: lowercase;
-    position: relative;
-    font-size: 17vw;
-    white-space: normal;
-    animation: none;
+  font-family: "Gilroy", sans-serif;
+  font-weight: bold;
+  line-height: 1;
+  color: #c7352d;
+  text-transform: lowercase;
+  position: relative;
+  font-size: 17vw;
+  white-space: normal;
+  animation: none;
 }
 
 /* multi-line vertical alignment */
