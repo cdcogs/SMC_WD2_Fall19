@@ -35,11 +35,11 @@ img {
   background-color: #f8f5ef;
 }
 
+
 .section.marquee-banner {
-  position: relative;
-  height: 90vw;
-  overflow: hidden;
-  z-index: 20;
+
+  height: auto;
+
 }
 
 .section.marquee-banner .text {
@@ -60,4 +60,25 @@ img {
   font-size: 17vw;
   white-space: normal;
   animation: none;
+}
+
+.section.about {
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 0 0 6vw;
+  z-index: 20;
+}
+
+.section.about .image {
+  width: 72vw;
+}
+
+.section.about .image {
+  position: relative;
+  width: 45vw;
 }
