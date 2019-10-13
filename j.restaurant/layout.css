@@ -1,12 +1,11 @@
 
 
 /* MEDIUM SIZE SCREENS */
-@media(min-width: 781px){
-  
+@media screen and (max-width: 782px) {
 
 }
 
 /* LARGE SCREENS */
-@media (min-width: 1000px){
-  
+@media screen and (max-width: 1000px) {
+
 }
