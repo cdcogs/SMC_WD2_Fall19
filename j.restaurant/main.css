@@ -1,13 +1,110 @@
+html,
 body,
+div,
+span,
 h1,
 h2,
-h3 {
+h3,
+p,
+ol,
+ul,
+li {
   margin: 0;
   padding: 0;
   border: 0;
   font: inherit;
   font-size: 100%;
-  vertical-align: baseline;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  line-height: 1;
+}
+a {
+  text-decoration: none;
+}
+ol,
+ul {
+  list-style: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+caption,
+th,
+td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+q,
+blockquote {
+  quotes: none;
+}
+q:before,
+q:after,
+blockquote:before,
+blockquote:after {
+  content: "";
+  content: none;
+}
+a img {
+  border: none;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="url"],
+input[type="search"],
+input[type="submit"],
+textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 0;
+}
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="submit"]:focus,
+textarea:focus {
+  outline: none;
+}
+textarea {
+  resize: vertical;
+}
+select {
+  width: 100%;
+}
+html {
+  background: #282925;
+  font-size: 16px;
+}
+html.wf-inactive {
+  opacity: 0;
+}
+html.no-js.wf-inactive,
+html.wf-active {
+  opacity: 1;
 }
 body {
   position: relative;
