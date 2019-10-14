@@ -2,6 +2,27 @@
 @import url(layout.css);
 @import url(navbar.css);
 
+body, h1, div  {
+    margin: 0;
+}
+
+main {
+    display: block;
+}
+
+h1 {
+    font-family: 'Gilroy', sans-serif;
+    font-weight: bold; 
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 17vw;
+    line-height: 1;
+    color:#C7352D;
+    background-size: 290px auto;
+    text-transform: lowercase;
+    position: relative;
+    box-sizing: border-box;
+}
+/* In Class Code Example*/
 
 /* multi-line vertical alignment */
 .content-table {

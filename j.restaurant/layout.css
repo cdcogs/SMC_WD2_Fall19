@@ -1,3 +1,41 @@
+.location-upper::before {
+    content: ' ';
+    position: absolute;
+    background-image: url("Red-grid.png");
+    background-position: bottom right;
+    background-size: 10vw auto;
+    top: 0;
+    left: 0;
+    width: 18vw;
+    height: 175vw;
+    z-index: 15;
+}
+
+.location-upper {
+    background-image: url("homepage-banner.jpg");
+    background-position: top center;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-color: 
+    #f8f5ef;
+}
+
+.section.marquee-banner {
+    height: auto;
+    position: relative;
+}
+
+.section.marquee-banner .text {
+    position: relative;
+    padding: 58vw 0 10vw 16vw;
+    top: auto;
+    left: auto;
+    width: auto;
+}
+
+
+/* In Class Example Code */
+
 .floater-section {
     float: left;
     min-height: 300px;
