@@ -50,6 +50,24 @@
   padding: 15px;
 }
 
+.section.menus {
+  background-image: url("menus-background.jpg");
+  padding: 15px;
+}
+
+.section.menus h2 {
+  background-color: #282925;
+  color: whitesmoke;
+  font-size: 13vw;
+  display: inline-block;
+  margin-right: 30vw;
+  margin-left: 10vw;
+}
+
+.section.menus img {
+size: fill;
+}
+
 /* In Class Example Code */
 
 .floater-section {

@@ -62,6 +62,18 @@ h5 {
   display: inline-block;
 }
 
+h6 {
+  font-family: 'Decima Mono', monospace;
+  line-height: 1;
+  font-size: 12pt;
+  color:#282925;
+  line-height: 2.2;
+  padding: 0 0.5em;
+  display: inline-block;
+  margin-left: 10px;
+  margin-bottom: auto;
+}
+
 
 li::before {
   content: '-';
