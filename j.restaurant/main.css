@@ -75,6 +75,15 @@ li {
   margin: 0;
 }
 
+.letters {
+  font-family: "Gilroy", sans-serif;
+  font-weight: bold;
+  font-size: 74pt;
+  line-height: 1;
+  color: rgb(255, 153, 0);
+  text-transform: lowercase;
+}
+
 /* block element with known height */
 .pos-relative {
   position: relative;
