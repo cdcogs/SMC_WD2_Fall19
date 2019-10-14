@@ -43,7 +43,11 @@
 .section.mmm {
   background-image: url("paint-strokes-white.jpg");
   padding: 40px;
-  margin-bottom: 40px;
+}
+
+.section.teaser {
+  background-image: url("gold-foil.png");
+  padding: 15px;
 }
 
 /* In Class Example Code */
