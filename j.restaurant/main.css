@@ -52,6 +52,16 @@ background: #282925;
 display: inline-block;
 }
 
+h5 {
+  font-family: 'Decima Mono', monospace;
+  line-height: 1;
+  font-size: 18pt;
+  color:#282925;
+  line-height: 2.2;
+  padding: 0 0.5em;
+  display: inline-block;
+}
+
 
 li::before {
   content: '-';
@@ -83,6 +93,19 @@ li {
   color: rgb(255, 153, 0);
   text-transform: lowercase;
 }
+
+h4 {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 40px;
+  position: absolute;
+  top: 188px;
+  left: 0px;
+  color: cornsilk;
+  background-color: rgba(50, 50, 50, 0.4);
+  width: 100%;
+  box-shadow: 0px 0px 11px rgba(50, 50, 50, 0.7);
+}
+
 
 /* block element with known height */
 .pos-relative {

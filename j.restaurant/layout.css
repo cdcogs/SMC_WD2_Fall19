@@ -33,15 +33,17 @@
 }
 
 .section.about {
-  background-color: aqua;
+  background-image: url("homepage-detail-background.jpg");
 }
 
 .section.detail {
-  background-color: cadetblue;
+  background-image: url("homepage-detail-background.jpg");
 }
 
 .section.mmm {
-  background-color: rgb(96, 95, 160);
+  background-image: url("paint-strokes-white.jpg");
+  padding: 40px;
+  margin-bottom: 40px;
 }
 
 /* In Class Example Code */
@@ -68,6 +70,7 @@ img {
 
 .content {
   padding: 15px;
+  position: relative;
 }
 
 /* MEDIUM SIZE SCREENS */
