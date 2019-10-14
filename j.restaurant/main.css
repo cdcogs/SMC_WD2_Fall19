@@ -15,7 +15,6 @@ main {
 h1 {
   font-family: "Gilroy", sans-serif;
   font-weight: bold;
-  -moz-osx-font-smoothing: grayscale;
   font-size: 17vw;
   line-height: 1;
   color: #c7352d;
@@ -24,17 +23,56 @@ h1 {
   position: relative;
   box-sizing: border-box;
 }
-/* In Class Code Example*/
 
-/* multi-line vertical alignment */
-.content-table {
-  display: table;
-  height: 120px;
+h2 {
+  font-family: "Gilroy", sans-serif;
+  font-weight: bold;
+  font-size: 74pt;
+  line-height: 1;
+  color: #c7352d;
+  text-transform: lowercase;
 }
 
-.content-table p {
-  display: table-cell;
-  vertical-align: middle;
+h3 {
+  font-family: 'Decima Mono', monospace;
+  font-size: 1.5vw;
+  color: #fff;
+  line-height: 2.2;
+  background: #282925;
+}
+
+p {
+font-family: 'Decima Mono', monospace;
+line-height: 1;
+font-size: 15pt;
+color: #fff;
+line-height: 2.2;
+padding: 0 0.5em;
+background: #282925;
+display: inline-block;
+}
+
+
+li::before {
+  content: '-';
+  display: inline-block;
+  margin: 0 0.3em 0 0;
+}
+
+li {
+  font-family: 'Gilroy', sans-serif;
+  font-weight: bold;
+  line-height: 1;
+  font-size: 3.2vw;
+  line-height: 1.2;
+  text-transform: lowercase;
+  color: #fff;
+  text-transform: lowercase;
+  background: #282925;
+  text-decoration: none;
+  list-style: none;
+  display: inline-block;
+  margin: 0;
 }
 
 /* block element with known height */

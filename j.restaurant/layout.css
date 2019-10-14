@@ -32,6 +32,13 @@
   width: auto;
 }
 
+.section.about {
+  background-color: aqua;
+}
+
+.section.detail {
+  background-color: cadetblue;
+}
 
 /* In Class Example Code */
 
@@ -98,7 +105,7 @@ img {
 /* LARGE SCREENS */
 @media (min-width: 800px) {
   .container {
-    width: 760px;
+    width: auto;
     margin: auto;
   }
 
