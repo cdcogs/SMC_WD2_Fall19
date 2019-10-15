@@ -112,6 +112,10 @@ size: fill;
 
 }
 
+.section.newsletter-sign-up {
+  background-image: url('homepage-detail-background.jpg');
+}
+
 /* In Class Example Code */
 
 .floater-section {
