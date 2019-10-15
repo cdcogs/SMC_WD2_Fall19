@@ -35,7 +35,7 @@ h2 {
 
 h3 {
   font-family: 'Decima Mono', monospace;
-  font-size: 1.5vw;
+  font-size: 15pt;
   color: #fff;
   line-height: 2.2;
   background: #282925;
@@ -55,7 +55,7 @@ display: inline-block;
 h5 {
   font-family: 'Decima Mono', monospace;
   line-height: 1;
-  font-size: 18pt;
+  font-size: 16pt;
   color:#282925;
   line-height: 2.2;
   padding: 0 0.5em;
@@ -72,13 +72,6 @@ h6 {
   display: inline-block;
   margin-left: 10px;
   margin-bottom: auto;
-}
-
-
-li::before {
-  content: '-';
-  display: inline-block;
-  margin: 0 0.3em 0 0;
 }
 
 li {
