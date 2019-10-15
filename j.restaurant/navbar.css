@@ -1,247 +1,72 @@
-header {
-    z-index:900
-   }
-   header:before {
-    display:none;
-    content:' ';
-    position:fixed;
-    top:0;
-    right:0;
-    width:13vw;
-    height:18vw;
-    background:#282925;
-    z-index:890
-   }
-   header .brand {
-    position:absolute;
-    display:block;
-    top:6vw;
-    left:45vw;
-    width:10vw;
-    z-index:910
-   }
-   header .toggle-menu {
-    position:fixed;
-    top:2vw;
-    right:2vw;
-    width:3.5vw;
-    height:3.5vw;
-    z-index:930
-   }
-   header .toggle-menu .icon {
-    top:1.55vw;
-    left:0;
-    height:0.4vw;
-    width:100%;
-    position:absolute;
-    display:block
-   }
-   header .toggle-menu .icon:before,
-   header .toggle-menu .icon:after {
-    content:' ';
-    left:0;
-    height:0.4vw;
-    width:100%;
-    display:block;
-    background:#C18C5E;
-    position:absolute
-   }
-   header .toggle-menu .icon:before {
-    bottom:0.6vw;
-    transition:bottom .3s .3s, transform .3s
-   }
-   header .toggle-menu .icon:after {
-    top:0.6vw;
-    transition:top .3s .3s, transform .3s
-   }
-   body.reveal-menu header .toggle-menu .icon:before {
-    bottom:0;
-    transition:bottom .3s, transform .3s .3s;
-    transform:rotate(-45deg)
-   }
-   body.reveal-menu header .toggle-menu .icon:after {
-    top:0;
-    transition:top .3s, transform .3s .3s;
-    transform:rotate(45deg)
-   }
-   @media screen and (max-width: 782px) {
-    header:before {
-     display:block
-    }
-    header .brand {
-     top:10vw;
-     width:20vw;
-     left:16vw
-    }
-    header .toggle-menu {
-     top:8vw;
-     right:3vw;
-     width:7vw;
-     height:7vw
-    }
-    header .toggle-menu .icon {
-     top:3.1vw;
-     height:0.8vw
-    }
-    header .toggle-menu .icon:before,
-    header .toggle-menu .icon:after {
-     background:#fff;
-     height:0.8vw
-    }
-    header .toggle-menu .icon:before {
-     bottom:1.2vw
-    }
-    header .toggle-menu .icon:after {
-     top:1.2vw
-    }
-   }
-   nav.header-navigation {
-    position:fixed;
-    top:0;
-    left:0;
-    width:100%;
-    background:rgba(40,41,37,0.95);
-    height:0;
-    display:-ms-flexbox;
-    display:flex;
-    padding:4vw 0 0;
-    -ms-flex-align:center;
-    align-items:center;
-    -ms-flex-pack:center;
-    justify-content:center;
-    transform:translateY(-100%);
-    overflow:hidden;
-    z-index:920;
-    transition:height 0.8s cubic-bezier(0.77, 0, 0.175, 1),transform 0.6s cubic-bezier(0.77, 0, 0.175, 1)
-   }
-   nav.header-navigation .inner {
-    opacity:0;
-    transition:opacity .3s;
-    display:-ms-flexbox;
-    display:flex;
-    margin:0 auto
-   }
-   nav.header-navigation .logo {
-    padding:0.5vw 0 0;
-    width:18vw
-   }
-   nav.header-navigation .logo img {
-    width:8vw
-   }
-   nav.header-navigation ul {
-    width:60vw;
-    height:36vw;
-    display:-ms-flexbox;
-    display:flex;
-    -ms-flex-direction:column;
-    flex-direction:column;
-    -ms-flex-wrap:wrap;
-    flex-wrap:wrap
-   }
-   nav.header-navigation ul li {
-    width:30vw;
-    height:12vw
-   }
-   nav.header-navigation ul li a {
-    display:block;
-    text-decoration:none
-   }
-   nav.header-navigation ul li a:hover span.name {
-    color:#C18C5E;
-    text-decoration:underline;
-    text-underline-position:under
-   }
-   nav.header-navigation ul li a:hover span.description {
-    opacity:1;
-    color:#C18C5E
-   }
-   nav.header-navigation ul li a span {
-    display:block
-   }
-   nav.header-navigation ul li a span.name {
-    font-family:'Gilroy', sans-serif;
-    font-weight:bold;
-    line-height:1;
-    -webkit-font-smoothing:antialiased;
-    -moz-osx-font-smoothing:grayscale;
-    font-size:5.6vw;
-    text-transform:lowercase;
-    color:#4f5149;
-    margin:0 0 2vw;
-    transition:color 0.2s
-   }
-   @media screen and (max-width: 782px) {
-    nav.header-navigation ul li a span.name {
-     font-size:11vw
-    }
-   }
-   nav.header-navigation ul li a span.description {
-    font-family:'Decima Mono', monospace;
-    line-height:1;
-    -webkit-font-smoothing:antialiased;
-    -moz-osx-font-smoothing:grayscale;
-    font-size:1.1vw;
-    color:#C18C5E;
-    line-height:1.6;
-    opacity:0;
-    transition:opacity 0.2s
-   }
-   @media screen and (max-width: 782px) {
-    nav.header-navigation ul li a span.description {
-     font-size:3vw
-    }
-   }
-   .reveal-menu nav.header-navigation {
-    transform:translateX(0);
-    height:46vw
-   }
-   .reveal-menu nav.header-navigation .inner {
-    opacity:1;
-    transition:opacity .4s .4s
-   }
-   @media screen and (max-width: 782px) {
-    nav.header-navigation .inner {
-     width:81vw
-    }
-    nav.header-navigation .logo {
-     display:none
-    }
-    nav.header-navigation ul {
-     height:auto
-    }
-    nav.header-navigation ul li {
-     width:81vw;
-     height:auto;
-     margin:0 0 3vw
-    }
-    nav.header-navigation ul li a span.name {
-     font-family:'Gilroy', sans-serif;
-     font-weight:bold;
-     line-height:1;
-     -webkit-font-smoothing:antialiased;
-     -moz-osx-font-smoothing:grayscale;
-     font-size:3.2vw;
-     line-height:1.2;
-     text-transform:lowercase;
-     margin:0 0 2vw;
-     color:#C18C5E;
-     text-decoration:underline;
-     text-underline-position:under
-    }
-   }
-   @media screen and (max-width: 782px) and (max-width: 782px) {
-    nav.header-navigation ul li a span.name {
-     font-size:6.4vw
-    }
-   }
-   @media screen and (max-width: 782px) {
-    nav.header-navigation ul li a span.description {
-     opacity:1
-    }
-    .reveal-menu nav.header-navigation {
-     transform:translateX(0);
-     height:130vw
-    }
-   }
+body {
+    margin: 0px;
+}
 
-   /* In Class Example Code (Deleted for now) */
+header {
+    background-color: lightcyan;
+}
+
+header input#toggler {
+    display: none;
+}
+
+header label img {
+    width: 40px;
+    height: auto;
+    margin: 10px;
+}
+
+nav {
+    padding: 20px 10px;
+    display: none;
+    z-index: 999;
+}
+
+input#toggler:checked + nav{
+    display: block;
+}
+
+nav ul {
+    list-style: none;
+    padding-left: 0px;
+    margin: 0px;
+}
+
+nav li {
+    border-bottom: 1px solid #212529;
+    padding: 10px 0px;
+    margin: 10px;
+}
+
+nav li:first-child {
+    margin-top: 0px;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: #212529;
+    text-transform: uppercase;
+    line-height: 40px; /*for vertical centering */
+}
+
+@media(min-width: 540px){
+    nav ul li {
+        display: inline-block;
+        padding-bottom: 5px;
+        border-bottom: 0px;
+        margin: 10px 20px;
+    }
+
+    header label {
+        display: none;
+    }
+
+    nav ul {
+        text-align: center;
+    }
+
+    nav {
+        display: block;
+        padding: 0px 10px;
+    }
+}
