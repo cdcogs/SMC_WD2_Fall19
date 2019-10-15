@@ -116,6 +116,10 @@ size: fill;
   background-image: url('homepage-detail-background.jpg');
 }
 
+.section.hire {
+  background-image: url('paint-strokes-pink.jpg');
+}
+
 /* In Class Example Code */
 
 .floater-section {
