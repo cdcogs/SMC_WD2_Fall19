@@ -17,11 +17,11 @@ h1 {
   font-weight: bold;
   font-size: 12vw;
   line-height: 1.4;
-  color: #c7352d;
   background-size: 290px auto;
   text-transform: lowercase;
   position: relative;
   box-sizing: border-box;
+  color: #8a2be257;
 }
 
 h2 {
@@ -29,7 +29,7 @@ h2 {
   font-weight: bold;
   font-size: 74pt;
   line-height: 1;
-  color: #c7352d;
+  color: #8a2be257;
   text-transform: lowercase;
 }
 
