@@ -1,3 +1,5 @@
+@import url("colors.css");
+
 body {
     margin: 0px;
 }
@@ -19,7 +21,6 @@ header label img {
 nav {
     padding: 20px 10px;
     display: none;
-    z-index: 999;
 }
 
 input#toggler:checked + nav{
@@ -46,7 +47,21 @@ nav ul a {
     text-decoration: none;
     color: #212529;
     text-transform: uppercase;
-    line-height: 40px; /*for vertical centering */
+}
+
+
+/*---------------- MAIN -------------------*/
+
+.floater-section {
+    float: left;
+    min-height: 300px;
+    width: 100%;
+}
+
+.container::after {
+    clear: both;
+    content: "";
+    display: block;
 }
 
 @media(min-width: 540px){
@@ -57,16 +72,39 @@ nav ul a {
         margin: 10px 20px;
     }
 
-    header label {
-        display: none;
-    }
-
     nav ul {
         text-align: center;
     }
 
     nav {
-        display: block;
         padding: 0px 10px;
+    }
+
+    /* MAIN */
+
+    .width-md-50 {
+        width: 50%;
+    }
+
+    .width-md-33 {
+        width: 33%;
+    }
+} /*end of 540px breakpoint*/
+
+@media (min-width: 800px){
+    .width-lg-25 {
+        width: 25%;
+    }
+
+    .width-lg-33 {
+        width: 33.33333%;
+    }
+
+    .width-lg-50 {
+        width: 50%;
+    }
+
+    .width-lg-100 {
+        width: 100%;
     }
 }

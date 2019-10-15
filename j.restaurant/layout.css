@@ -1,15 +1,4 @@
-.location-upper::before {
-  content: " ";
-  position: absolute;
-  background-image: url("Red-grid.png");
-  background-position: bottom right;
-  background-size: 10vw auto;
-  top: 0;
-  left: 0;
-  width: 18vw;
-  height: 175vw;
-  z-index: 15;
-}
+
 
 .location-upper {
   background-image: url("homepage-banner.jpg");
