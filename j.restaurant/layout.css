@@ -1,4 +1,15 @@
-
+.location-upper::before {
+  content: " ";
+  position: absolute;
+  background-image: url("Red-grid.png");
+  background-position: bottom right;
+  background-size: 10vw auto;
+  top: 0;
+  left: 0;
+  width: 14vw;
+  height: 175vw;
+  z-index: 15;
+}
 
 .location-upper {
   background-image: url("homepage-banner.jpg");
@@ -8,6 +19,43 @@
   background-color: #f8f5ef;
 }
 
+.brand {
+  position:absolute;
+  display:block;
+  top:6vw;
+  left:45vw;
+  width:10vw;
+  z-index:910
+ }
+
+ .section.marquee-banner .text {
+  position: relative;
+  padding: 35vw 0 30vw 16vw;
+  top: auto;
+  left: auto;
+  width: auto;
+}
+
+ @media screen and (max-width: 425px) {
+
+  .brand {
+   top:10vw;
+   width:17vw;
+   left:20vw
+  }
+
+.section.marquee-banner h1 {
+  font-family: "Gilroy", sans-serif;
+  font-weight: bold;
+  font-size: 17vw;
+  line-height: 1.18;
+  color: #c7352d;
+  background-size: 290px auto;
+  text-transform: lowercase;
+  position: relative;
+  box-sizing: border-box;
+}
+
 .section.marquee-banner {
   height: auto;
   position: relative;
@@ -15,10 +63,12 @@
 
 .section.marquee-banner .text {
   position: relative;
-  padding: 58vw 0 10vw 16vw;
+  padding: 55vw 0 16vw 16vw;
   top: auto;
   left: auto;
   width: auto;
+}
+
 }
 
 .section.about {
@@ -77,6 +127,10 @@ size: fill;
 
 img {
   max-width: 100%;
+}
+
+.brand {
+background-color: #84ffab69;
 }
 
 .content {

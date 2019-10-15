@@ -15,8 +15,8 @@ main {
 h1 {
   font-family: "Gilroy", sans-serif;
   font-weight: bold;
-  font-size: 17vw;
-  line-height: 1;
+  font-size: 12vw;
+  line-height: 1.4;
   color: #c7352d;
   background-size: 290px auto;
   text-transform: lowercase;
