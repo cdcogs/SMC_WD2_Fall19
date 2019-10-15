@@ -69,7 +69,6 @@
   left: auto;
   width: auto;
 }
-
 }
 
 .section.about {
@@ -156,10 +155,18 @@ background: #282925;
 display: inline-block;
 }
 
+.footer {
+  background-color: cornflowerblue;
+}
+
+.footer img {
+  width: 80px;
+}
+
 /* MEDIUM SIZE SCREENS */
 @media (min-width: 540px) {
   .container {
-    width: 520px;
+    width: auto;
     margin: auto;
   }
 

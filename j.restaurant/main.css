@@ -56,6 +56,10 @@ background: #282925;
 display: inline-block;
 }
 
+a {
+  color: hotpink;
+}
+
 h5 {
   font-family: 'Decima Mono', monospace;
   line-height: 1;
