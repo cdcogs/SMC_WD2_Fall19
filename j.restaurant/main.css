@@ -35,16 +35,19 @@ h2 {
 
 h3 {
   font-family: 'Decima Mono', monospace;
-  font-size: 15pt;
+  font-size: 14pt;
+  font-weight: 300;
   color: #fff;
   line-height: 2.2;
   background: #282925;
+  display: inline;
 }
 
 p {
 font-family: 'Decima Mono', monospace;
 line-height: 1;
 font-size: 15pt;
+font-weight: 300;
 color: #fff;
 line-height: 2.2;
 padding: 0 0.5em;
@@ -60,12 +63,14 @@ h5 {
   line-height: 2.2;
   padding: 0 0.5em;
   display: inline-block;
+  font-weight: 300;
 }
 
 h6 {
   font-family: 'Decima Mono', monospace;
   line-height: 1;
   font-size: 12pt;
+  font-weight: 300;
   color:#282925;
   line-height: 2.2;
   padding: 0 0.5em;
@@ -78,8 +83,8 @@ li {
   font-family: 'Gilroy', sans-serif;
   font-weight: bold;
   line-height: 1;
-  font-size: 3.2vw;
-  line-height: 1.2;
+  font-size: 24pt;
+  line-height: 1.5;
   text-transform: lowercase;
   color: #fff;
   text-transform: lowercase;

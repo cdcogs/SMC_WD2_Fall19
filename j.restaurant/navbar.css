@@ -6,7 +6,7 @@ body > header:nth-child(1) > label:nth-child(1) {
     position: fixed;
     top: 20px;   
     right: 10px;
-    z-index: 930;
+    z-index: 9999;
    }
    
 
