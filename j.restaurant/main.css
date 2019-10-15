@@ -21,7 +21,8 @@ h1 {
   text-transform: lowercase;
   position: relative;
   box-sizing: border-box;
-  color: #8a2be257;
+  color: #8a2be284;
+  text-shadow: 2px 2px #ff0000;
 }
 
 h2 {
@@ -29,7 +30,7 @@ h2 {
   font-weight: bold;
   font-size: 74pt;
   line-height: 1;
-  color: #8a2be257;
+  color: #8a2be284;
   text-transform: lowercase;
 }
 
