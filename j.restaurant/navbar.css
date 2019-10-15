@@ -1,12 +1,16 @@
-@import url("colors.css");
-
-body {
-    margin: 0px;
-}
-
 header {
     background-color: lightcyan;
 }
+
+body > header:nth-child(1) > label:nth-child(1) {
+    position: fixed;
+    top: 2vw;
+    right: 2vw;
+    width: 3.5vw;
+    height: 3.5vw;
+    z-index: 930;
+   }
+   
 
 header input#toggler {
     display: none;
@@ -49,21 +53,6 @@ nav ul a {
     text-transform: uppercase;
 }
 
-
-/*---------------- MAIN -------------------*/
-
-.floater-section {
-    float: left;
-    min-height: 300px;
-    width: 100%;
-}
-
-.container::after {
-    clear: both;
-    content: "";
-    display: block;
-}
-
 @media(min-width: 540px){
     nav ul li {
         display: inline-block;
@@ -79,32 +68,3 @@ nav ul a {
     nav {
         padding: 0px 10px;
     }
-
-    /* MAIN */
-
-    .width-md-50 {
-        width: 50%;
-    }
-
-    .width-md-33 {
-        width: 33%;
-    }
-} /*end of 540px breakpoint*/
-
-@media (min-width: 800px){
-    .width-lg-25 {
-        width: 25%;
-    }
-
-    .width-lg-33 {
-        width: 33.33333%;
-    }
-
-    .width-lg-50 {
-        width: 50%;
-    }
-
-    .width-lg-100 {
-        width: 100%;
-    }
-}
