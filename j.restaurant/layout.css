@@ -156,7 +156,7 @@ display: inline-block;
 }
 
 .footer {
-  background-color: cornflowerblue;
+  background-image: url("gold-foil.png");
 }
 
 .footer img {
