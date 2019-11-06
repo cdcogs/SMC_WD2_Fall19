@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <section>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/67/Hoffl%C3%B6th%28T%C3%B6Vo-Cl%C3%B6rath%29-2%28400x400%29.jpg" id="imageToSwitch" alt="Landscape of a countryside.">
+            <button id="imgToggle">Switch!</button>
+        </section>
+
+        <section>
+            <form action="" method="GET">
+                <select id="make">
+                    <option value="audi">Audi</option>
+                    <option value="bmw">BMW</option>
+                    <option value="fiat">FIAT</option> 
+                </select>
+
+                <select id="model">
+
+                </select>
+            </form>
+        </section>
+    </main>
+
+    <script>
+        // we'll set up the variables before we describe the function - 
+        // this way running the function will not change them
+        var image2URL = "https://www.filterforge.com/more/help/images/size400.jpg";
+        var image2Alt = "Electric chaos.";
+        var switchingImage = document.getElementById("imageToSwitch");
+        var image1URL = switchingImage.src;
+        var image1Alt = switchingImage.alt;
+        // listen for a click on an '#imgToggle' button and run the following function
+        document.getElementById('imgToggle').addEventListener('click', function(){
+            // for debugging - print the contents of the image1URL variable in the console
+            console.log(image1URL);
+            // if the source of the image is the same as the contents of the image2URL variable
+            if( switchingImage.src === image2URL ){
+                switchingImage.src = image1URL; //make the source be the 1st URL
+                switchingImage.alt = image1Alt; //make the alt attribute be the 1st alt attribute
+            }
+            else { //otherwise - here we'd expect the source of the image is the same as the contents of the image1URL variable
+                switchingImage.src = image2URL; //make the source be the 2nd URL
+                switchingImage.alt = image2Alt; //make the alt attribute be the 2nd alt attribute
+            }
+        })
+        // we'll again set up the variables before the function
+        var makeSelect = document.getElementById('make');
+        var modelSelect = document.getElementById('model');
+        // here we'll listen for a change in selection and the following function
+        makeSelect.addEventListener( 'change', function(){
+            // for debugging - print the value of the current selection
+            console.log(makeSelect.value);
+            
+            // if the current value is 'bmw'
+            if(makeSelect.value === 'bmw') {
+                // put the following string as a child in the '#model' element
+                modelSelect.innerHTML = '<option value="M3">M3</option>\
+                                    <option value="M5">M5</option>\
+                                    <option value="X5">X5</option>';
+            }
+            // if the current value is 'audi'
+            else if(makeSelect.value === 'audi') {
+                // put the following string as a child in the '#model' element
+                modelSelect.innerHTML = '<option value="S4">S4</option>\
+                                        <option value="A8">A8</option>\
+                                        <option value="R8">R8</option>';
+            }
+            // if the current value is 'fiat'
+            else if(makeSelect.value === 'fiat') {
+                // put the following string as a child in the '#model' element
+                modelSelect.innerHTML = '<option value="500">500</option>\
+                                        <option value="124">Spider</option>\
+                                        <option value="500X">500X</option>';
+            }
+            
+        } )
+        
+    </script>
+    
+</body>
+</html>
