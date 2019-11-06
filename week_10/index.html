@@ -15,10 +15,10 @@
 
         <section>
             <form action="" method="GET">
-                <select id="make">
-                    <option value="audi">Audi</option>
-                    <option value="bmw">BMW</option>
-                    <option value="fiat">FIAT</option> 
+                <select id="fhcaAbout">
+                    <option value="brandOrgins">Brand Orgins</option>
+                    <option value="founders">Founders</option>
+                    <option value="vision">Vision</option> 
                 </select>
 
                 <select id="model">
@@ -51,7 +51,7 @@
             }
         })
         // we'll again set up the variables before the function
-        var makeSelect = document.getElementById('make');
+        var makeSelect = document.getElementById('fhcaAbout');
         var modelSelect = document.getElementById('model');
         // here we'll listen for a change in selection and the following function
         makeSelect.addEventListener( 'change', function(){
@@ -59,21 +59,21 @@
             console.log(makeSelect.value);
             
             // if the current value is 'bmw'
-            if(makeSelect.value === 'bmw') {
+            if(makeSelect.value === 'founders') {
                 // put the following string as a child in the '#model' element
                 modelSelect.innerHTML = '<option value="M3">M3</option>\
                                     <option value="M5">M5</option>\
                                     <option value="X5">X5</option>';
             }
-            // if the current value is 'audi'
-            else if(makeSelect.value === 'audi') {
+            // if the current value is 'brandOrgins'
+            else if(makeSelect.value === 'brandOrgins') {
                 // put the following string as a child in the '#model' element
                 modelSelect.innerHTML = '<option value="S4">S4</option>\
                                         <option value="A8">A8</option>\
                                         <option value="R8">R8</option>';
             }
-            // if the current value is 'fiat'
-            else if(makeSelect.value === 'fiat') {
+            // if the current value is 'vision'
+            else if(makeSelect.value === 'vision') {
                 // put the following string as a child in the '#model' element
                 modelSelect.innerHTML = '<option value="500">500</option>\
                                         <option value="124">Spider</option>\
