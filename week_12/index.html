@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        .container {
+            background-color: azure;
+            width: 500px;
+            height: 400px;
+        }
+
+        .box {
+            background-color: darkorange;
+            width: 100px;
+            height: 100px;
+            display: none;
+        }
+    
+
+    </style>
+
+</head>
+<body>
+    
+    <header>
+        <form action="" method="POST">
+            <label for="userName">User Name</label>
+            <input type="text" id="userName" name="username" placeholder="Karen Scmidt">
+            <br>
+            <label for="userEmail">User Email</label>
+            <input type="email" id="userEmail" name="useremail" placeholder="karen@gmail.com">
+            <br>
+
+            <select id="FX">
+                <option value="" default></option>
+                <option value="show">Show</option>
+                <option value="hide">Hide</option>
+                <option value="slidedown">Slide Down</option>
+            </select>
+            <input type="submit" value="Send!">
+        </form>
+    </header>
+
+    <main>
+
+        <section class="notification-area"></section>
+        
+        <section class="container">
+            <div class="box"></div>
+
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
