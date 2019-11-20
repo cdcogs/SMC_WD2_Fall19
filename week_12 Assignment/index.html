@@ -4,54 +4,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Liu Wen's Favorite Home Decor</title>
 
     <style>
-        .container {
-            background-color: azure;
-            width: 500px;
-            height: 400px;
-        }
 
-        .box {
-            background-color: darkorange;
-            width: 150px;
-            height: 150px;
-            display: none;
-        }
+    
+
+    #slider {
+        width: 720px;
+        height: 400px;
+        overflow: hidden;
+    }
+
+    #slider .slides {
+        display: block;
+        width: 6000px;
+        height: 400px;
+        margin: 0;
+        padding: 0;
+    }
+
+    #slider .slide {
+        float: left;
+        list-style-type: none;
+        width: 720px;
+        height: 400px;
+    }
     </style>
 
 </head>
 <body>
 
     <header>
-        <form action="" method="POST">
-            <label for="userName">User Name</label>
-            <input type="text" id="userName" name="username" placeholder="Karen Schmidt">
-            <br/>
-            <label for="userEmail">Email Address</label>
-            <input type="email" id="userEmail" name="useremail" placeholder="karen@gmail.com">
-            <br>
+        <h1>
+            Liu Wen's World
+        </h1>
+        <h2>And her favorite home decor of 2019</h2>
+        <img src="liuwen.jpg" alt="Liu Wen">
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+        </p>
 
-            <select id="FX">
-                <option value="" default></option>
-                <option value="show">Show</option>
-                <option value="hide">Hide</option>
-                <option value="fadein">FadeIn</option>
-                <option value="fadeout">FadeOut</option>
-                <option value="slidedown">SlideDown</option>
-                <option value="slideup">SlideUp</option>
-            </select>
-            <input type="submit" value="Send!">
-        </form>
     </header>
     
     <main>
-        <section class="notification-area"></section>
-        
-        <section class="container">
-            <div class="box"></div>
-        </section>
+        <div class="container">
+            <div class="header">
+                <h1 class="text-muted">jQuery Basic Slider</h1>
+            </div>
+
+            <div id="slider">
+                <ul class="slides">
+
+                    <li class="slide slide1"><img src="yasmine-boheas-i_q8BWT80TE-unsplash.jpg"></li>
+                    <li class="slide slide2"><img src="yasmine-boheas-PX7hU0tcBL0-unsplash.jpg"></li>
+                    <li class="slide slide3"><img src="liana-mikah-42E7fArZ7d0-unsplash.jpg"></li>
+                    <li class="slide slide4"><img src="colin-maynard-d4ctBYmyMrI-unsplash.jpg"></li>
+                    <li class="slide slide5"><img src="little-white-coffee-table-6412.jpg"></li>
+                    <li class="slide slide1"><img src="yasmine-boheas-i_q8BWT80TE-unsplash.jpg"></li>
+
+                </ul>
+            </div>
+
+        </div>
+
     </main>
 
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
