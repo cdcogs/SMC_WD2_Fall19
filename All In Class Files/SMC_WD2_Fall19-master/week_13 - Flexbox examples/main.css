@@ -1,0 +1,38 @@
+.flex-container {
+    background-color:darkorange;
+    display: flex;
+    /*
+    EXPERIMENTS WITH CONTIANER:
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: stretch;
+    height: 400px;
+    align-content: space-evenly; */
+    justify-content: space-evenly;
+    height: 400px;
+    align-items: self-start;
+}
+
+.flex-item {
+    margin: 10px;
+}
+
+.flex-item:nth-child(1){
+    background-color: aquamarine;
+}
+.flex-item:nth-child(2){
+    background-color: cadetblue;
+}
+.flex-item:nth-child(3){
+    background-color: deepskyblue;
+}
+.flex-item:nth-child(4){
+    background-color: lightsteelblue;
+}
+.flex-item:nth-child(5){
+    background-color: mintcream;
+}
+.flex-item:nth-child(6){
+    background-color: powderblue;
+}

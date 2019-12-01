@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav id="navBar">
+            <button id="colorButton">Color Me!</button>
+        </nav>
+    </header>
+
+    <main>
+        <div id="contentMain">
+            <h1>Hello, World!</h1>
+        </div>
+    </main>
+
+    <footer>
+    </footer>
+
+    <script>
+        //we'll start but getting the button by its ID ('colorButton') and adding a listener for a mouseclick that will perform a function for us:
+        document.getElementById("colorButton").addEventListener( "click", function(){
+            //debug - let's see if the function runs
+            console.log("it!");
+            //we'll get the element with "contentMain" ID and assign it to a variable
+            //this variable will hold a reference to it
+            var mainContent =  document.getElementById("contentMain");
+            //we'll also create three variable to hold three random numbers in the range 0-255
+            var redComponent = Math.random()*255;
+            var greenComponent = Math.random()*255;
+            var blueComponent = Math.random()*255;
+
+            //debig - let's see what those three variables hold
+            console.log("Red: " + redComponent);
+            console.log("Green: " + greenComponent);
+            console.log("Blue: " + blueComponent);
+            //we'll make another varibale to hold a string that will represent an RGB color usable in CSS
+            //we'll build this string out of our three random variable plus some elements needed for the correct CSS syntax
+            var compRGBString = "rgb(" + redComponent + "," + greenComponent + "," + blueComponent + ")";
+            //debug - let's see the result
+            console.log(compRGBString);
+            //set the style property for the background color on our mainContent element (see line 32) to the CSS value we built on line 44
+            mainContent.style.backgroundColor = compRGBString;
+        } );
+
+        // this is a highly simplified version of the code above - no buttons, no randomness, no debugging
+        document.getElementById("contentMain").style.backgroundColor = "rgb(255, 0, 0)";
+        // example of an alert
+        alert("Hey, what's your name?");
+    </script>
+</body>
+</html>
