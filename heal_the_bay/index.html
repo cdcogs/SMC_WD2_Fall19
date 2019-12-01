@@ -1,12 +1,42 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>title</title>
-  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=font1|font2|etc" type="text/css">
-  <link rel="stylesheet" href="main.css" type="text/css">
+    <link
+      rel="stylesheet"
+      href="//fonts.googleapis.com/css?family=font1|font2|etc"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="main.css" type="text/css" />
   </head>
   <body>
-  
+    <nav class="navbar">
+      <span class="navbar-toggle" id="js-navbar-toggle">
+        <i class="fas fa-bars"></i>
+      </span>
+      <a href="#" img src="HTB logo1.png" class="logo">Heal The Bay</a>
+      <ul class="main-nav" id="js-menu">
+        <li>
+          <a href="#" class="nav-links">About</a>
+        </li>
+        <li>
+          <a href="#" class="nav-links">Donations</a>
+        </li>
+        <li>
+          <a href="#" class="nav-links">Blog</a>
+        </li>
+      </ul>
+    </nav>
+
+    <script src="script.js">
+
+          let mainNav = document.getElementById("js-menu");
+      let navBarToggle = document.getElementById("js-navbar-toggle");
+
+      navBarToggle.addEventListener("click", function() {
+        mainNav.classList.toggle("active");
+      });
+    </script>
   </body>
 </html>
