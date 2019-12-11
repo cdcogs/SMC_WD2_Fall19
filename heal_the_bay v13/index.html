@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Heal The Bay - Home</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="main.css" type="text/css" />
+  </head>
+  <body>
+    <div id="logo">
+      <a href="index.html">
+        <img src="HTB logo 2.png" alt="Heal The Bay" />
+      </a>
+    </div>
+    <div class="topnav">
+<!-- Navigation links (hidden by default) -->
+      <div id="myLinks">
+        <a href="Join_Us.html">Join Us </a>
+        <a href="Our_Impact.html">Our Impact</a>
+        <a href="article_2.html">Take Part</a>
+        <a href="article_3.html">Summit To The Sea</a>
+        <a href="donate.html">Donate</a>
+      </div>
+<!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+
+    <div class="grid-hero">
+      <hero-left>
+        <div class="hero-left-text">
+          <div class="hero-left-text-inside">
+            <h1 class="hero-title">
+              THE POWER OF WATER
+            </h1>
+            <p>
+              Ripples become waves. Volunteer in community science, education, and advocacy. Your generous support ensures that our waterways and coastline are healthy, safe, and clean.
+            </p>
+
+            <a href="Join_Us.html" class="button">+ JOIN US</a>
+          </div>
+        </div>
+      </hero-left>
+
+      <hero-right>
+        <div class="hero-right-image">
+          <div class="hero-right-image-inside">
+            <img src="whale.jpg" alt="Whale" />
+          </div>
+        </div>
+      </hero-right>
+    </div>
+
+<!-- Start second section -->
+    <div class="second-section">
+      <div class="left-section">
+        <div id="stat">
+          <h1>Our Impact</h1>
+          <p>
+            Beach cleanups are just the beginning. Heal the Bay staff work to mobilize LA’s diverse communities to protect our coastline, restore our waterways, and speak out for smart water policy.
+            <br /><br>
+            <a href="article_2.html">TAKE PART</a>
+          </p>
+        </div>
+
+        <div class="left-article">
+          <img src="aquarium.jpg" alt="beach" />
+          <div id="left-article-text-inner">
+            <h3>
+              Steps from the ocean, an underwater wonderland awaits. Our Aquarium under the Santa Monica Pier features marine life that live right offshore.
+              <br />
+              <a href="visit.html" class="button-hoverable button1">DIVE IN</a>
+            </h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="right-section">
+        <div class="right-article">
+          <img id="rightImage" src="beach.jpg" alt="beach" />
+          <div id="rightText">
+            <div id="right-article-text-inner">
+              
+              <h3>
+                Healing the Bay starts farther inland than you might think. Take an interactive trip with us as we follow water’s journey from the Sierras to Santa Monica Bay.
+              <br />
+              <a href="article_3.html" class="button-hoverable button2">EXPLORE</a>
+              </h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<div class="fourth-section">
+  <header-donate>
+      <h5>
+          Donate
+      </h5>
+      <p-dontate>
+          Make a smart investment: a vibrant Bay and a healthier LA. With 75 cents of every dollar going directly to our programs, you can donate with confidence.
+      </p-dontate>
+      <br>
+      <a href="donate.html" class="button-hoverable button3">GIVE NOW</a>
+  </header-donate>
+</div>
+<div id="thankYou">
+    <p>THANK YOU | HEAL THE BAY</p>
+  </div>
+
+
+    </div>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+    </script>
+  </body>
+</html>

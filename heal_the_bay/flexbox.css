@@ -1,0 +1,160 @@
+.wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  text-align: center;
+  align-items: center;
+}
+
+.wrapper > * {
+  padding: 10px;
+  flex: 1 100%;
+}
+
+.header {
+  background: tomato;
+}
+
+.footer {
+  background: lightgreen;
+}
+
+.main {
+  text-align: left;
+  background: deepskyblue;
+}
+
+.aside-1 {
+  background: gold;
+}
+
+.aside-2 {
+  background: hotpink;
+}
+
+@media all and (min-width: 600px) {
+  .aside {
+    flex: 1 0 0;
+  }
+}
+
+@media all and (min-width: 800px) {
+  .main {
+    flex: 3 0px;
+  }
+  .aside-1 {
+    order: 1;
+  }
+  .main {
+    order: 2;
+  }
+  .aside-2 {
+    order: 3;
+  }
+  .footer {
+    order: 4;
+  }
+}
+
+.hero-text {
+  max-width: 372px;
+  margin-left: auto;
+  margin-right: 64px;
+  position: relative;
+  padding-left: 32px;
+  text-align: left;
+}
+.hero-text h1 {
+  font-size: 46px;
+}
+
+/* .hero-slider_grid */
+
+.hero-slider__grid {
+  display: flex;
+  padding: 32px 32px 0;
+}
+
+.hero-slider__grid-left {
+  width: 66.666666%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding-right: 32px;
+}
+
+.hero-slider__grid-left-top {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+}
+
+.stat-box {
+  position: relative;
+  max-width: 770px;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+}
+
+.stat-box__stat {
+  position: relative;
+  font-size: 59px;
+  font-size: 3.6875em;
+  font-size: 3.6875rem;
+  color: #14284b;
+  font-weight: 700;
+  line-height: 0.9;
+  top: -2px;
+  padding-right: 40px;
+  font-size: 41px;
+  font-size: 2.5625em;
+  font-size: 2.5625rem;
+  margin-bottom: 8px;
+}
+
+.hero-slider__grid-left-bottom {
+    display: flex;
+    flex-direction: column;
+}
+
+article {
+    display: block;
+}
+
+.hero-slider__grid-left-bottom .action a {
+    width: 100%;
+    margin-top: auto;
+    display: flex;
+    background: #00b9f1;
+}
+
+.hero-slider__grid-left-bottom .action .action__image {
+    height: auto !important;
+    float: none;
+}
+
+.action .action__image, .action .action__text {
+    width: 50%;
+    float: left;
+}
+
+.action__image img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    line-height: 0;
+}
+
+.hero-slider .action .action__text {
+    padding-left: 24px;
+    float: none;
+}
+
+.hero-slider .action__text-inside {
+    padding: 20px 24px 20px 0;
+}
+
+.hero-slider__grid-right {
+    width: 33.333333%;
+}

@@ -1,6 +1,7 @@
-@import "colors.css";
+@import url(colors.css);
 @import url(layout.css);
 @import url(navbar.css);
+@import url(flexbox.css);
 
 /* multi-line vertical alignment */
 .content-table {
@@ -59,15 +60,3 @@
 
   transform: translate(-50%, -50%);
 }
-
-.v-h-centered-block-hero {
-    height: auto;
-    width: 340px;
-  
-    position: absolute;
-    top: 50%;
-    left: 50%;
-  
-    transform: translate(-50%, -50%);
-  }
-  

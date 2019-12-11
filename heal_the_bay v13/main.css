@@ -1,0 +1,557 @@
+/* Nav CSS */
+
+/* Style the navigation menu */
+
+#logo {
+  position: absolute;
+  padding: 12px;
+  z-index: 9999;
+  width: 116px;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #3999BF;
+  position: relative;
+  padding: 25px;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+  display: none;
+  padding-top: 74px;
+}
+
+/* Style navigation menu links */
+.topnav a {
+  color: white;
+  padding: 18px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+  background: none;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/* Add a grey background color on mouse-over */
+#myLinks a:hover {
+  color: violet;
+  background-color: aquamarine;
+}
+
+/* Style the active link (or home/logo) */
+.active {
+  background-color: teal;
+  color: white;
+}
+
+/* End Nav CSS */
+
+.grid-hero {
+  background: #1C6C8C;
+}
+
+.grid-hero {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  margin-bottom: 1em;
+}
+
+.hero-left-text {
+  margin-top: 40px;
+  position: relative;
+  align-items: center;
+  display: flex;
+}
+
+.hero-title {
+  font-family: "Helveticaneueltstd roman", "Helvetica Neue", Helvetica,
+    sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 2.85rem;
+  line-height: 1.2;
+  letter-spacing: 1.18px;
+  color: #fff;
+  margin-bottom: 16px;
+  margin-top: -35px;
+}
+
+.hero-left-text-inside {
+  max-width: 372px;
+  margin-left: auto;
+  margin-right: 64px;
+  position: relative;
+  padding-left: 32px;
+  box-sizing: inherit;
+  font-family: "Helveticaneueltstd roman", "Helvetica Neue", Helvetica,
+    sans-serif;
+  font-size: 16px;
+  line-height: 1.5em;
+  color: #eaeaea;
+}
+
+.hero-left-text-inside p {
+  font-family: "Helveticaneueltstd roman", "Helvetica Neue", Helvetica,
+    sans-serif;
+  font-size: 16px;
+  line-height: 1.65em;
+  color: #eaeaea;
+  margin-top: -12px;
+  margin-bottom: 18px;
+}
+
+.button {
+  background-color: #45B8E6;
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.button-hoverable {
+  background-color: #4caf50; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 26px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 18px;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: transparent;
+  color: #525252;
+  border: 2px solid #525252;
+}
+
+.button2 {
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+}
+
+.button3 {
+  background-color: #ef572e;
+  color: white;
+  border: 2px solid #ef572e;
+  margin-bottom: 75px;
+  margin-top: 25px;
+}
+
+.hero-right-image {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 66.66667%;
+  height: auto !important;
+}
+
+.hero-right-image-inside {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 150px auto 150px;
+  grid-gap: 1em;
+}
+
+hero-left {
+  grid-column: 1 / 1;
+}
+
+hero-right {
+  grid-column: 2 / 2;
+}
+
+header,
+footer {
+  grid-column: 1 / 4;
+}
+
+.second-section {
+  display: grid;
+  grid-template-columns: 66.66% 33.33%;
+}
+
+#stat {
+  display: flex;
+  align-items: center;
+}
+
+#stat h1 {
+  font-size: 3.2rem;
+  padding-right: 30px;
+  padding-left: 30px;
+  color: #1B4859;
+}
+
+#stat p {
+  font-weight: 500;
+  font-size: 1.3125em;
+  line-height: 1.25;
+  color: #14284b;
+}
+
+#stat a {
+  font-family: "Helveticaneueltstd roman", "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.65em;
+  color: #ef572e;
+  margin-top: -12px;
+  margin-bottom: 18px;
+  Display: block;
+}
+
+.left-section {
+  grid-column: 1/1;
+  align-self: end;
+  padding: 10px;
+}
+
+.left-article {
+  background-color: #41AED9;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.right-article {
+  display: grid;
+}
+
+.right-section {
+  background-color: #DF5973;
+  grid-column: 2/2;
+  margin: 10px;
+}
+
+#rightImage {
+  width: 100%;
+}
+
+#right-article-text-inner {
+  display: flex;
+  align-self: center;
+  padding: 40px;
+  line-height: 1.5;
+  color:white;
+  font-family: "Helveticaneueltstd roman", "Helvetica Neue", Helvetica, sans-serif;
+  letter-spacing: 1.5px;
+}
+
+#right-article-text-inner a, #left-article-text-inner a {
+  font-weight: 500;
+}
+
+#left-article-text-inner {
+  display: flex;
+  align-self: center;
+  padding-right:40px;
+  padding-left: 40px;
+  line-height: 1.5;
+  color:white;
+  font-family: "Helveticaneueltstd roman", "Helvetica Neue", Helvetica, sans-serif;
+  letter-spacing: 1.5px;
+}
+
+@media all and (max-width: 1023px) {
+  hero-left,
+  hero-right,
+  aside,
+  article {
+    grid-column: 1 / 4;
+  }
+
+  .hero-left-text {
+    margin-top: 40px;
+    height: 450px;
+    position: relative;
+  }
+
+  .second-section {
+    display: grid;
+    grid-template-columns: 66.66% 33.33%;
+  }
+
+  #stat {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 30px;
+  }
+
+  #stat h1 {
+    font-size: 3rem;
+    padding-right: 30px;
+    padding-left: 30px;
+    margin: 0;
+  }
+
+  #stat p {
+    font-weight: 500;
+    font-size: 1.3125em;
+    line-height: 1.25;
+    color: #14284b;
+  }
+
+  .left-article {
+    background-color: #41AED9;
+    display: grid;
+    grid-template-columns: 100%;
+}
+  }
+
+  @media all and (max-width: 1023px) {
+    .left-section {
+      grid-column: 1/3;
+      align-self: center;
+    }
+
+    .right-section {
+      display: grid;
+    }
+
+    .right-section {
+      background-color: #DF5973;
+      grid-column: 1/3;
+    }
+    .right-article {
+      display: grid;
+      grid-template-columns: 100%;
+      grid-template-rows: 1fr;
+    }
+
+    #rightText {
+      align-self: center;
+    }
+  }
+
+  #rightImage {
+    width: 100%;
+  }
+
+  #right-article-text-inner {
+    display: flex;
+    align-self: center;
+  }
+
+  #left-article-text-inner {
+    display: flex;
+    align-self: center;
+  }
+
+
+/* Demo Specific Styles */
+body {
+  margin: 0;
+}
+
+hero-left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+hero-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header,
+aside,
+article,
+footer {
+  background: #eaeaea;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 25vh;
+}
+
+.third-section {
+  display: grid;
+  grid-template-columns: 33.33% 33.33% 33.33%;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+header-thrid {
+  grid-column: 1 / 4;
+  display: block;
+  text-align: center;
+  max-width: 600px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+header-thrid p {
+  font-size: 26px;
+}
+
+div.article-card {
+  padding: 20px;
+}
+
+#article-one-card {
+  grid-column: 1/1;
+}
+
+#article-two-card {
+  grid-column: 2/2;
+}
+
+#article-three-card {
+  grid-column: 3/3;
+}
+
+.fourth-section {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  background-color: #c2c2c2;
+  margin-top: 100px;
+}
+
+header-donate {
+  grid-column: 1 / 4;
+  display: block;
+  text-align: center;
+  max-width: 600px;
+  margin-right: auto;
+  margin-left: auto;
+  font-family: "Knockout 51 A", "Knockout 51 B", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.125rem;
+  text-transform: uppercase;
+  color: #102345;
+  letter-spacing: 0.03em;
+  margin-top: 50px;
+}
+
+p-dontate {
+  font-family: "Surveyor Text A", "Surveyor Text B", "Times New Roman", Times,
+    Baskerville, Georgia, serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.4rem;
+  line-height: 1.2;
+  letter-spacing: 1px;
+  padding-left: 50px;
+  padding-right: 50px;
+  display: block;
+}
+
+/* Article CSS */
+
+article {
+  display: grid;
+  grid-template-columns:
+    [full-start] minmax(1em, 1fr)
+    [main-start] minmax(0, 56em) [main-end]
+    minmax(1em, 1fr) [full-end];
+  grid-gap: 1em;
+}
+
+section {
+  grid-column: main;
+}
+
+figure {
+  grid-column: full;
+}
+
+/* Demo Specific Styles */
+body {
+  padding: 0;
+  margin: 0;
+}
+
+article > * {
+  background-color: #eaeaea;
+  padding: 2em;
+}
+
+figure {
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+}
+
+/*Third2*/
+
+/*Article*/
+
+articlePage {
+  display: grid;
+  grid-template-columns: 
+    [full-start] minmax(1em, 1fr) 
+    [main-start] minmax(0, 56em) [main-end]
+    minmax(1em, 1fr) [full-end];
+  grid-gap: 1em;
+  margin-top: 50px;
+}
+
+section {
+  grid-column: main;
+}
+
+figure {
+  grid-column: full;
+}
+
+/* Demo Specific Styles */
+
+article > * {
+  background-color: #eaeaea;
+  padding: 2em;
+}
+
+figure {
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+}
+
+#thankYou {
+  font-family: "Helveticaneueltstd roman", "Helvetica Neue", Helvetica, sans-serif;
+  padding:10px;
+  background-color: #1B4859;
+  color: white;
+  text-align: center;
+}
+
+#thankYouDonate {
+  font-family: "Helveticaneueltstd roman", "Helvetica Neue", Helvetica, sans-serif;
+  padding:10px;
+  background-color: #1B4859;
+  color: white;
+  text-align: center;
+  margin-top: 50px;
+}
