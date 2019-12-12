@@ -4,6 +4,11 @@ body {
   margin: 0px;
 }
 
+main {
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
 header {
   background-color: white;
 }
@@ -22,6 +27,14 @@ header label img {
   width: 40px;
   height: auto;
   margin: 10px;
+}
+
+h1 {
+  font-family: "Courier New", Courier, monospace;
+  text-align: left;
+  margin-bottom: 10px;
+  margin-top: 40px;
+  font-size: 36px;
 }
 
 h3 {
@@ -44,6 +57,7 @@ nav {
 
 input#toggler:checked + nav {
   display: block;
+  border-bottom: 1px solid black;
 }
 
 nav ul {
@@ -74,12 +88,29 @@ nav ul a:hover {
   background-color: rgb(216, 216, 18);
 }
 
+label img:hover {
+  background-color: rgb(216, 216, 18);
+}
+
+#hamster {
+  width: 300px;
+}
+
 /*---------------- MAIN -------------------*/
 
 .floater-section {
   float: left;
   min-height: 300px;
   width: 100%;
+}
+
+.floater-section.width-lg-100 {
+  padding-top: 40px;
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
 }
 
 .container::after {
@@ -105,6 +136,20 @@ nav ul a:hover {
   }
 
   /* MAIN */
+
+  .width-lg-100 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .width-lg-100 h3 {
+    width: 600px;
+    margin-top: 0; 
+    text-align: center;
+  }
 
   .width-md-50 {
     width: 50%;
